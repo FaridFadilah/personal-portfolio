@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <div class="container wrap">
+      <h3>Farid Fadilah</h3>
+      <ul class="navLink">
+        <li><a>About</a></li>
+        <li><a>Skill</a></li>
+        <li><a>Experience</a></li>
+        <li><a>Education</a></li>
+        <li><a>Contact</a></li>
+        <li>
+          <div class="wrap-lang">
+            <button type="button" id="lang" class="lang">
+              <i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-caret-down arrow"></i>
+            </button>
+            <div class="dropdown-lang">
+              <button type="button" class="lang-button">Indonesia</button>
+              <button type="button" class="lang-button">English</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button id="hamburger">
+        <i id="hamburgerIcon" class="fa-solid fa-bars"></i>
+      </button>
+      <div class="navLinkRes">
+        <ul>
+          <li><a>About</a></li>
+          <li><a>Experience</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Contact</a></li>
+          <li>
+            <div class="wrap-lang">
+              <button type="button" id="lang" class="lang">
+                <i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-caret-down arrow"></i>
+              </button>
+              <div class="dropdown-lang">
+                <button type="button" class="lang-button">Indonesia</button>
+                <button type="button" class="lang-button">English</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="wrap">
+        <h3 class="fancy">Hii, I'm <span>“Farid Fadilah Permana”</span></h3>
+        <p>I am a tech enthusiast and programming, who finds joy in merging innovation with creativity to produce a
+          masterpiece, with the background in Software Engineering and Backend Developer. Trough my journey, I've
+          cultivated skills that empower
+          me to create a positive impact.</p>
+        <p>Feel free to explore my portfolio, and I hope you like it</p>
+        <ul class="">
+          <div>
+            <li>Age </li>
+            <li>Address </li>
+            <li>Status </li>
+            <li>Email </li>
+          </div>
+          <div>
+            <li>: 20</li>
+            <li>: Bandung, Indonesia</li>
+            <li>: Working in Alkademi, Bandung</li>
+            <li>: faridfadillah29@gmail.com</li>
+          </div>
+        </ul>
+        <div class="sosmed">
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/farid-fadillah-396589251/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.github.com/faridfadilah" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <img src="assets/img/illustration.png" alt="">
+    </div>
+  </header>
+
+  <section id="skills" class="container">
+    <h3>Skills</h3>
+    <p>Although my background as Backend Developer, I have a lot experience in Frontend Developer, here is my skills
+    </p>
+    <div class="list">
+      <div>
+        <h5>Frontend</h5>
+        <ul>
+          <li><img src="assets/icon/bootstrap.svg" alt="bootstrap"></li>
+          <li><img src="assets/icon/js.svg" alt="Javascript"></li>
+          <li><img src="assets/icon/vue.svg" alt="Vue"></li>
+          <li><img src="assets/icon/nuxt.svg" alt="Nuxt"></li>
+          <li><img src="assets/icon/tailwind.svg" alt="Tailwindcss"></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Backend</h5>
+        <ul>
+          <li>
+            <img src="assets/icon/go.svg" alt="Golang">
+            <label></label>
+          </li>
+          <li><img src="assets/icon/php.svg" alt="Php"></li>
+          <li><img src="assets/icon/laravel.svg" alt="Laravel"></li>
+          <li><img src="assets/icon/postgre.svg" alt="Postgre"></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="experience" class="container">
+    <h3>Experience</h3>
+  </section>
+
+  <div class="container">
+    <button>
+      <i class="">darkMode</i>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    handleHamburger()
+    typeAnimation()
+  </script>
+</body>
+
+</html>

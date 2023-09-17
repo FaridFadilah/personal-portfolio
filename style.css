@@ -1,0 +1,294 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  background:#FEFCF3;
+}
+
+.container{
+  max-width: 1024px;
+  margin: 5rem auto;
+  width: 100%;
+}
+
+.darkMode{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid var(--thirdLight);
+  padding: 1rem;
+}
+
+nav .container{
+  margin-block: 0;
+}
+
+nav h3{
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: var(--primaryLight);
+}
+
+nav .wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .wrap .navLink{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap:1.75rem;
+
+  word-spacing: 2px;
+  letter-spacing: 1.4px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+nav .wrap .navLink li{
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+nav .wrap .navLink li:hover{
+  color: #2d6956;
+}
+
+nav .wrap .navLink .wrap-lang{
+  position: relative;
+}
+nav .wrap .navLink .wrap-lang .lang{
+  margin-left: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: 1.75rem;
+  padding-inline:.75rem;
+  display: flex;
+  gap:5px;
+  align-items: center;
+}
+
+nav .wrap .navLink .wrap-lang .dropdown-lang{
+  display: none;
+  position: absolute;
+  top: 30px;
+  left:12px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  height: auto;
+  background: #fff;
+}
+
+nav .wrap .navLink .wrap-lang .dropdown-lang.active{
+  display: block;
+}
+
+nav .wrap .navLink .wrap-lang .dropdown-lang .lang-button{
+  width: 100%;
+  height: 100%;
+  padding-block:5px;
+}
+
+nav .wrap .navLink .wrap-lang .dropdown-lang .lang-button:first-child{
+  border-radius: 10px 10px 0 0 ;
+}
+
+nav .wrap .navLink .wrap-lang .dropdown-lang .lang-button:last-child{
+  border-radius: 0 0 10px 10px;
+}
+
+nav .wrap .navLink .wrap-lang .dropdown-lang .lang-button:hover{
+  background:#E8F3D6;
+  transition: ease-in;
+  transition-duration: 5ms;
+}
+
+nav .wrap #hamburger{
+  display: none;
+  font-size: 30px;
+}
+
+
+nav .navLinkRes{
+  display: none;
+  margin-top: 5px;
+}
+
+header .container{
+  display: flex;
+  background: #D5FFE4;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 249px;
+  border-bottom-right-radius: 249px;
+  align-items: center;
+}
+
+header .wrap{
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  gap: 20px;
+}
+header .wrap h3{
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+}
+
+header .wrap h3 span{
+  color: #252B48;
+}
+
+header .wrap .sosmed{
+  display: flex;
+  gap: 15px;
+}
+
+header .wrap .sosmed a{
+  font-size: 30px;
+  color: #2d6956;
+}
+header .wrap .sosmed a:hover{
+  color: #47b785;
+  transition: all;
+  transition-duration: .25s;
+}
+
+header .wrap p{
+  word-spacing: 2px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+header .wrap ul{
+  list-style: none;
+  display: flex;
+  gap: 50px;  
+  word-spacing: 2px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+header .wrap ul .col-full{
+  width: 70%;
+}
+
+header .wrap ul li{
+  display: flex;
+  justify-content: space-between;
+}
+
+header img{
+  background: #9baa31;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 50%;
+}
+
+#skills.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills h3{
+  font-size: 30px;
+}
+
+#skills .list{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap:20px
+}
+
+#skills .list div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 1.5rem;
+  border-radius:20px;
+}
+#skills .list div:first-child{
+  background-color: #FFCCCC;
+}
+#skills .list div:last-child{
+  background-color: #D8B4F8;
+}
+
+#skills .list div ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem
+}
+
+#skills .list div ul li img{
+  width: 40px;
+}
+
+#experience{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#experience h3{
+  font-size: 30px;
+}
+
+@media (max-width:920px){  
+  nav .wrap .navLink{
+    display: none;
+  }
+
+  nav .navLinkRes.active{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav .wrap #hamburger{
+    display: inline-block;
+  }
+}
+
+@media (max-width: 765px){
+  nav #hamburger{
+    display: inline-block;
+  }
+
+  nav .navLinkRes.active{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
